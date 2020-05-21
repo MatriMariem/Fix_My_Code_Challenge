@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-""" module """
+""" Module """
 
 
 class Square():
@@ -8,7 +8,7 @@ class Square():
     height = 0
 
     def __init__(self, *args, **kwargs):
-        """ instantiation """
+        """ Instantiation """
         for key, value in kwargs.items():
             setattr(self, key, value)
 
@@ -17,16 +17,16 @@ class Square():
         return self.width * self.height
 
     def permiter_of_my_square(self):
-        """ perimeter """
+        """ Perimeter """
         return (self.width * 2) + (self.height * 2)
 
     def __str__(self):
-        """ printable representation """
+        """ Printable representation """
         return "{}/{}".format(self.width, self.height)
 
 
 if __name__ == "__main__":
-    """ some docstring for the checker """
+    """ Some docstring for the checker """
     s = Square(width=12, height=9)
     print(s)
     print(s.area_of_my_square())
