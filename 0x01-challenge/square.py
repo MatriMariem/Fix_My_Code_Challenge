@@ -24,6 +24,7 @@ class Square():
         """ printable representation """
         return "{}/{}".format(self.width, self.height)
 
+
 if __name__ == "__main__":
     """ some docstring for the checker """
     s = Square(width=12, height=9)
